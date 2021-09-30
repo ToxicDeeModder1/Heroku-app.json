@@ -1,8 +1,8 @@
 # Heroku-app.json
-A Telegram bot for making Heroku app.json by [@AbirHasan2005](https://t.me/AbirHasan2005).
+A Telegram bot for making Heroku app.json by [Toxic Dee Modder](https://t.me/ToxicDeeModderr).
 
 ### Demo Bot
-<a href="https://t.me/HerokuAppJson_Bot"><img src="https://img.shields.io/badge/Telegram-Demo%20Bot-blue.svg?logo=telegram"></a>
+<a href="https://t.me/heroku_appcreator_Bot"><img src="https://img.shields.io/badge/Telegram-Demo%20Bot-blue.svg?logo=telegram"></a>
 
 ## Host Bot
 ### Deploy to Heroku
