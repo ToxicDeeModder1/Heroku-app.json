@@ -34,7 +34,7 @@ async def StartSteps(bot: Client, editable: Message):
     }
     ## --- Step 1 --- ##
     await editable.edit("**Step 1:**\n"
-                        "Send me your Heroku App Name.",
+                        "Send me your Heroku App Name\n\n🔴You Must Know That You Must Join Our Channel First \n🔵 @TheBotsWorldChannel.",
                         reply_markup=ikeyboard)
     input_m: Message = await bot.listen(editable.chat.id, timeout=600)
     if input_m.text.startswith("/"):
