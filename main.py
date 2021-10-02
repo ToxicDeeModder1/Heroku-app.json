@@ -18,14 +18,14 @@ app = Client(
 
 @app.on_message(filters.command("start") & filters.private & ~filters.edited)
 async def start_command(_, m: Message):
-    await m.reply_text("✋Hi, I am Heroku app.json maker bot.\n\n"
-                       "To start making app.json for your heroku app,\n"
-                       "Pllease Join Below Channel To Start Using Me\n\n🔵Developed By @ToxicDeeModderr", quote=True, disable_web_page_preview=True)
+    await m.reply_text("*✋Hi, I am Heroku app.json maker bot.\n\n"
+                       "To start making app.json for your heroku app, [/Joined]\n"
+                       "Please Join Below Channel To Start Using Me\n\n🔵Developed By @ToxicDeeModderr*", quote=True, disable_web_page_preview=True)
 
 
-@app.on_message(filters.command("f") & ~filters.edited & filters.private)
+@app.on_message(filters.command("/Joined") & ~filters.edited & filters.private)
 async def f_command(bot: Client, m: Message):
-    editable = await m.reply_text("Please wait ...",
+    editable = await m.reply_text("*Checking...*",
                                   reply_markup=InlineKeyboardMarkup([
                                       [InlineKeyboardButton("Cancel Process", callback_data="cancelProcess")]
                                   ]))
