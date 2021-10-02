@@ -32,6 +32,16 @@ async def StartSteps(bot: Client, editable: Message):
         "buildpacks": list(),
         "formation": dict()
     }
+    ## --- Join First --- ##
+    await editable.edit("**Read:**\n"
+                        "*You Must Join My Official Channel First To Use Me\n\n🔵 @TheBotsWorldChannel.\n\nWhen You Joined The Channel Send me Any Text
+*",
+                        reply_markup=ikeyboard)
+    input_m: Message = await bot.listen(editable.chat.id, timeout=600)
+    if input_m.text.startswith("/"):
+        return await input_m.continue_propagation()
+    heroku_app["name"] = input_m.text
+    await input_m.delete(True)
     ## --- Step 1 --- ##
     await editable.edit("**Step 1:**\n"
                         "Send me your Heroku App Name\n\n🔴You Must Know That You Must Join Our Channel First \n🔵 @TheBotsWorldChannel.",
