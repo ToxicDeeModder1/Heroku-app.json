@@ -20,7 +20,7 @@ app = Client(
 async def start_command(_, m: Message):
     await m.reply_text("✋Hi, I am Heroku app.json maker bot.\n\n"
                        "To start making app.json for your heroku app,\n"
-                       "Press /f\n\n🔵Developed By @ToxicDeeModderr", quote=True, disable_web_page_preview=True)
+                       "Pllease Join Below Channel To Start Using Me\n\n🔵Developed By @ToxicDeeModderr", quote=True, disable_web_page_preview=True)
 
 
 @app.on_message(filters.command("f") & ~filters.edited & filters.private)
